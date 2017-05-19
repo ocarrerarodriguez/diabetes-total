@@ -1,0 +1,16 @@
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="370px" height="90px" viewBox="0 0 370 90" enable-background="new 0 0 370 90" xml:space="preserve">
+<rect fill="#B7B7B7" width="370" height="90"/>
+<rect x="20.000"  y="20.000" fill="#848484" width="50" height="50"/>
+<rect x="90.000"  y="20.000" fill="#61C1E7" width="50" height="50"/>
+<rect x="160.000" y="20.000" fill="#505050" width="50" height="50"/>
+<rect x="230.000" y="20.000" fill="#28ABE2" width="50" height="50"/>
+<rect x="300.000" y="20.000" fill="#FFFFFF" width="50" height="50"/>
+<text transform="matrix(0.9819 0 0 1 27.0000 85.0000)" fill="#000000" font-family="'MyriadPro-Regular'" font-size="12">848484</text>
+<text transform="matrix(0.9819 0 0 1 97.0000 85.0000)" fill="#000000" font-family="'MyriadPro-Regular'" font-size="12">61C1E7</text>
+<text transform="matrix(0.9819 0 0 1 167.000 85.0000)" fill="#000000" font-family="'MyriadPro-Regular'" font-size="12">505050</text>
+<text transform="matrix(0.9819 0 0 1 237.000 85.0000)" fill="#000000" font-family="'MyriadPro-Regular'" font-size="12">28ABE2</text>
+<text transform="matrix(0.9819 0 0 1 307.000 85.0000)" fill="#000000" font-family="'MyriadPro-Regular'" font-size="12">FFFFFF</text>
+</svg>

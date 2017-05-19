@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="diabetes-total" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP" host="localhost/diaetes-total" port="80">
+    <method />
+  </configuration>
+</component>

@@ -1,0 +1,36 @@
+<div class="container">
+            <div class="col-md-3"></div>
+        
+            <div class="col-md-6">
+                <div class="panel panel-primario">
+                    <div class="panel-heading"><h3><?php echo($this->titulo);?></h3></div>
+                    <div class="panel-body">
+                        <!--inicio formulario-->
+                        <form class="form-signin" role="form" action ="#">
+                    <h2 class="form-signin-heading">Registrate</h2>
+                    
+                    <div class="form-group">
+                            <label for="Email">Correo Electronico</label>
+                            <input type="email" class="form-control" id="Email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                            <label for="Name">Nombre</label>
+                            <input type="text" class="form-control" id="Name" placeholder="Enter name" required>
+                    </div>
+                    <div class="form-group">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                            
+                            <input type="text" id="encipted-salt"       class=" hidden form-control" >
+                            <input type="text" id="encriped-password"   class=" hidden form-control" >
+                    </div>
+                    
+                    <button class="btn btn-lg btn-primario btn-block" type="submit">Registrate</button>
+                </form>
+                        <!--fin formulario -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>

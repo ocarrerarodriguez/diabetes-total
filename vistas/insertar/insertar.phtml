@@ -1,0 +1,67 @@
+<div class="col-md-3">
+
+</div>
+
+<div class="col-md-6">
+    
+    <div class="panel panel-primario">
+        <div class="panel-heading">
+			<h3><?php echo($this->titulo);?></h3>
+            <?php echo($this->alert);?>
+        </div>
+        <div class="panel-body">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+            
+            <form action="insertar" method="post" name="form1" role="form" >
+                <div class="form-group">
+                    <lavel for="fecha">fecha</lavel>
+                        
+                    <input type="date" class="form-control" name ="fecha" id="fecha" placeholder="fecha">
+                    
+                </div>
+                <div class="form-group">
+					<p>
+						<lavel for="hora">hora</lavel>
+						<div class="input-group bootstrap-timepicker timepicker">
+							<input id="hora" class="form-control time" type="text" name ="hora" placeholder="hora">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+							<a href="javascript:;" id="horaButton"class="form-control btn btn-primario">Hora actual</a>
+						</div>
+ 
+						<script type="text/javascript">
+							$('#hora').timepicker();
+						</script>
+					</p>
+				</div>
+				
+                <div class="form-group">
+                    <lavel for="glucemia">glucemia</lavel>
+                    <input type="number" class="form-control" name ="glucemia" id="glucemia" placeholder="glucemia">
+                </div>
+                <div class="form-group">
+                    <lavel for="ir">insulina rapida</lavel>
+                    <select class="form-control" name ="ir" id="ir">
+                        <option value ="selec">-- selecionar insulina rapida --</option>
+                        <?php for($i=0;$i<80;$i++){?>
+                            <option value ="<?php echo($i)?>"><?php echo($i)?></option>
+                        <?php }?>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <lavel for="il">insulina lenta</lavel>
+                    <select class="form-control" name ="il" id="il">
+                        <option value ="selec">-- selecionar insulina lenta --</option>
+                        <?php for($i=0;$i<80;$i++){?>
+                            <option value ="<?php echo($i)?>"><?php echo($i)?></option>
+                        <?php }?>
+                    </select>
+                </div>
+                <input type="submit" class="btn btn-success btn-block" href="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]."/nuevo");?>">
+            </form>
+                </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <div class="col-md-3">
+    </div>

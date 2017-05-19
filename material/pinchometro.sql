@@ -1,0 +1,3 @@
+﻿INSERT INTO `pinchometro`(`Tipo de registro`, `Número de registro`, `Mes`, `Fecha`, `Año`, `Hora`, `Minuto`, `Rango de temperatura`, `Nivel de batería`, `Tiempo de toma de comida`, `Resultado de glucosa`, `Resultado de cuerpos cetónicos`, `Número etiqueta inteligente`, `Número tabla`, `Estilo de insulina`, `Datos estilo insulina`, `Valor de corrección`, `Valor cambiado`, `Resultado de insulina`, `Insulina prandial`, `Insulina activa`, `Gramos de carb`, `Tipo de insulina manual`, `Acción prolongada Insulina`, `Insulina en bolo`)
+VALUES (0,21357,5,12,17,17,32,0,0,2,429,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+VALUES (1,21356,5,12,17,14,5,0,0,0,0,0,0,0,2,2,6,0,26,20,0,0,0,0,0);

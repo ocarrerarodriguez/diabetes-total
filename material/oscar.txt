@@ -1,0 +1,9 @@
+Tipo de registro	Número de registro	Mes	Fecha	Año	Hora	Minuto	Rango de temperatura	Nivel de batería	Tiempo de toma de comida	Resultado de glucosa	Resultado de cuerpos cetónicos	Número etiqueta inteligente	Número tabla	Estilo de insulina	Datos estilo insulina	Valor de corrección	Valor cambiado	Resultado de insulina	Insulina prandial	Insulina activa	Gramos de carb	Tipo de insulina manual	Acción prolongada Insulina	Insulina en bolo	
+1					21340				5		10	17	14		49		0						0					0							0						0								0							0				2					2						4					0				24						20						0				0				0						0							0
+0					21339				5		10	17	14		48		0						0					1							258						0								0							0				0					0						0					0				0						0						0				0				0						0							0
+1					21338				5		10	17	8		39		0						0					0							0						0								0							0				2					1						-2					0				14						16						0				0				0						0							0
+0					21337				5		10	17	8		39		0						0					1							105						0								0							0				0					0						0					0				0						0						0				0				0						0							0
+1					21290				5		4	17	20		51		0						0					0							0						0								0							0				2					3						-2					0				16						20						2				0				0						0							0
+0					21289				5		4	17	20		50		0						0					1							125						0								0							0				0					0						0					0				0						0						0				0				0						0							0
+0 glucemia
+1 insulina

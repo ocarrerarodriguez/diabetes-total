@@ -1,0 +1,35 @@
+<h2>Ultimos Posts</h2>
+
+<?php if(isset($this->posts) && count($this->posts)){
+?>
+<div class="table">
+    <div class="row header">
+        <div class="cell">id</div>
+        <div class="cell">titulo</div>
+        <div class="cell">post</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+<?php for($i = 0;$i<(count($this->posts));$i++){ ?>
+    <div class="row header">
+
+        <div class="cell"><?php echo $this->posts[$i]->id; ?></div>
+        <div class="cell"><?php echo $this->posts[$i]->titulo." "; ?></div>
+        <div class="cell"><?php echo $this->posts[$i]->cuerpo." "; ?></div>
+        <div class="cell"><a href="<?php echo BASE_URL . 'post/editar/' . $this->posts[$i]->id; ?>">Editar</a></div>
+        <div class="cell"><a href="<?php echo BASE_URL . 'post/eliminar/' . $this->posts[$i]->id; ?>">Eliminar</a></div>
+    </div>
+<?php } ?>                                    
+</div>
+<?php
+}
+else {
+    ?>
+
+    <p><strong>No hay posts!</strong></p>
+
+<?php } ?>
+
+<?php //if(Session::accesoViewEstricto(array('usuario'))): ?>
+    <p><a class="btn btn-primario" href="<?php BASE_URL; ?>post/nuevo">Agregar Post</a></p>
+<?php //endif; ?>

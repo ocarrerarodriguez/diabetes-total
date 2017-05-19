@@ -1,0 +1,49 @@
+<!-- contenido-->
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="panel panel-primario">
+                        <div class="panel-heading"><h3><?php echo $this->titulo;?><br><?php echo $this->paciente;?></h3></div>
+                            <div class="panel-body">
+                                
+                                <div class="table">
+                                    <div class="row header">
+                                        <div class="cell">fecha</div>
+                                        <div class="cell">hora</div>
+                                        <div class="cell">glucemia</div>
+                                        <div class="cell">&nbsp;&nbsp;rapida&nbsp;&nbsp; </div>
+                                        <div class="cell">&nbsp;&nbsp;lenta&nbsp;&nbsp;&nbsp; </div>
+                                        <div class="cell"></div>
+                                        <div class="cell"></div>
+                                    </div>
+                                    <?php for($i=0;$i<(count($this->datos));$i++){
+                                            ?>
+                                        <div class="row <?php if($this->datos[$i]->glucemia>300){echo("yelow");}if($this->datos[$i]->glucemia<70){echo("red");}?>">
+										<div class="cell"><?php echo $this->datos[$i]->fecha;?></div>
+                                        <div class="cell"><?php echo $this->datos[$i]->hora;?></div>
+                                        <div class="cell"><?php echo $this->datos[$i]->glucemia;?></div>
+                                        <div class="cell <?php if($this->datos[$i]->rapida!=0){echo("rapida");}?>"><?php echo $this->datos[$i]->rapida;?></div>
+                                        <div class="cell <?php if($this->datos[$i]->lenta!=0){echo("lenta");}?>"><?php echo $this->datos[$i]->lenta;?></div>
+										<div class="cell "><?php 
+										if($this->datos[$i]->horario==0){echo("otros");}
+										if($this->datos[$i]->horario==1){echo("desauno");}
+										if($this->datos[$i]->horario==2){echo("almuerzo");}
+										if($this->datos[$i]->horario==3){echo("merienda");}
+										if($this->datos[$i]->horario==4){echo("cena");}
+										if($this->datos[$i]->horario==5){echo("desauno");}
+										if($this->datos[$i]->horario==6){echo("almuerzo");}
+										if($this->datos[$i]->horario==7){echo("merienda");}
+										if($this->datos[$i]->horario==8){echo("cena");}
+										?></div>
+                                        <div class="cell"><a class="btn-primario btn btnf " href="/material"><span class="glyphicon glyphicon-pencil"></span><?php echo $this->datos[$i]->id." ";?></a></div>
+                                        <div class="cell"><a class="btn-danger btn btnf" href="borrar.php?id=<?php echo $this->datos[$i]->id;?>"><span class="glyphicon glyphicon-trash"></span><?php echo $this->datos[$i]->id." ";?></a></div>
+                                    </div>
+                                            <?php
+                                        }?>
+                                    
+                                </div>
+                                <div class=""><a class="btn-success btn btn-block" href="<?php echo('insertar');?>">insertar</a></div>
+ 
+                            </div>
+                    </div>                    
+                </div>
+                <div class="col-md-3"></div>

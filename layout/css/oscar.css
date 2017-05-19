@@ -1,0 +1,36 @@
+
+.table>tbody>tr.warning>td,
+.table>tbody>tr.warning>th,
+.table>tbody>tr>td.warning,
+.table>tbody>tr>th.warning,
+.table>tfoot>tr.warning>td,
+.table>tfoot>tr.warning>th,
+.table>tfoot>tr>td.warning,
+.table>tfoot>tr>th.warning,
+.table>thead>tr.warning>td,
+.table>thead>tr.warning>th,
+.table>thead>tr>td.warning,
+.table>thead>tr>th.warning              {background-color:#ece8d3}
+.table-hover>tbody>tr.warning:hover>td,
+.table-hover>tbody>tr.warning:hover>th,
+.table-hover>tbody>tr:hover>.warning,
+.table-hover>tbody>tr>td.warning:hover,
+.table-hover>tbody>tr>th.warning:hover  {background-color:#eae2bc}
+
+@media (max-width:767px){
+    .navbar-defecto .navbar-nav .open .dropdown-menu>li>a{color:#505050}
+    .navbar-defecto .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-defecto .navbar-nav .open .dropdown-menu>li>a:hover{color:#333;background-color:transparent}
+    .navbar-defecto .navbar-nav .open .dropdown-menu>.active>a,.navbar-defecto .navbar-nav .open .dropdown-menu>.active>a:focus,.navbar-defecto .navbar-nav .open .dropdown-menu>.active>a:hover{color:#555;background-color:#e7e7e7}
+    .navbar-defecto .navbar-nav .open .dropdown-menu>.disabled>a,.navbar-defecto .navbar-nav .open .dropdown-menu>.disabled>a:focus,.navbar-defecto .navbar-nav .open .dropdown-menu>.disabled>a:hover{color:#ccc;background-color:transparent}
+}
+.navbar-defecto .navbar-link{color:#505050}
+.navbar-defecto .navbar-link:hover{color:#333}
+.navbar-defecto .btn-link{color:#505050}
+.navbar-defecto .btn-link:focus,.navbar-defecto .btn-link:hover{color:#333}
+.navbar-defecto .btn-link[disabled]:focus,
+.navbar-defecto .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-defecto .btn-link:focus,
+fieldset[disabled] .navbar-defecto .btn-link:hover{color:#ccc}
+
+
+
