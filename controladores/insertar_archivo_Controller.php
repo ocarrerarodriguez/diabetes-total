@@ -46,7 +46,7 @@ class insertar_archivo_Controller extends cls_Controller{
                     $fichero=array();
                     $salida=array();
                     $sql=array();
-                    $this->_view->mensaje=$this->alert(1);
+                    $this->_view->mensaje=$this->alert(1,$msg);
                     $archivo=(BASE_URL.'uploads/'. $_FILES["archivo"]['name']);
                      $fichero = file($archivo);
                         for($i=0;$i<sizeof($fichero);$i++)
@@ -66,7 +66,7 @@ class insertar_archivo_Controller extends cls_Controller{
                                      $sql["$i"]=($cadena);
                         
                         } 
-                        $this->_view->salida=$salida;
+                        $this->_view->tabla=$salida;
                         $this->_view->sql=$sql;
                         
                         //fclose($archivo);
